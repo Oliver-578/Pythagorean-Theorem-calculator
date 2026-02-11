@@ -132,21 +132,21 @@ def main():
                     "Vector 2"
                 )
                 result = calculator.find_resultant(v1, v2)
-                print(f"\n✓ Resultant: {result:.4f}")
+                print(f"\n Resultant: {result:.4f}")
                 calculator.add_to_history("Find Resultant", f"({v1}, {v2})", result)
             
             elif choice == '2':
                 h = calculator.validate_input(input("Enter hypotenuse: "), "Hypotenuse")
                 b = calculator.validate_input(input("Enter side B: "), "Side B")
                 result = calculator.find_side_a(h, b)
-                print(f"\n✓ Side A: {result:.4f}")
+                print(f"\n Side A: {result:.4f}")
                 calculator.add_to_history("Find Side A", f"(h={h}, b={b})", result)
             
             elif choice == '3':
                 h = calculator.validate_input(input("Enter hypotenuse: "), "Hypotenuse")
                 a = calculator.validate_input(input("Enter side A: "), "Side A")
                 result = calculator.find_side_b(h, a)
-                print(f"\n✓ Side B: {result:.4f}")
+                print(f"\n Side B: {result:.4f}")
                 calculator.add_to_history("Find Side B", f"(h={h}, a={a})", result)
             
             elif choice == '4':
@@ -159,7 +159,7 @@ def main():
                     "Adjacent"
                 )
                 result = calculator.calculate_angle(opp, adj)
-                print(f"\n✓ Angle: {result:.2f}°")
+                print(f"\n Angle: {result:.2f}°")
                 calculator.add_to_history("Calculate Angle", f"(opp={opp}, adj={adj})", result)
             
             elif choice == '5':
@@ -167,7 +167,7 @@ def main():
                 b = calculator.validate_input(input("Enter side B: "), "Side B")
                 result = calculator.calculate_perimeter(a, b)
                 hyp = calculator.find_resultant(a, b)
-                print(f"\n✓ Perimeter: {result:.4f}")
+                print(f"\n Perimeter: {result:.4f}")
                 print(f"  (Sides: {a:.4f} + {b:.4f} + {hyp:.4f})")
                 calculator.add_to_history("Calculate Perimeter", f"({a}, {b})", result)
             
@@ -175,7 +175,7 @@ def main():
                 a = calculator.validate_input(input("Enter side A: "), "Side A")
                 b = calculator.validate_input(input("Enter side B: "), "Side B")
                 result = calculator.calculate_area(a, b)
-                print(f"\n✓ Area: {result:.4f} square units")
+                print(f"\n Area: {result:.4f} square units")
                 calculator.add_to_history("Calculate Area", f"({a}, {b})", result)
             
             elif choice == '7':
@@ -197,4 +197,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
